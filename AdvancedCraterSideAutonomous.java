@@ -21,7 +21,7 @@ public class AdvancedCraterSideAutonomous extends LinearOpMode{
     private double distanceTraveled;
     @Override
     public void runOpMode() {
-        robot= new Robot(hardwareMap, telemetry);
+        robot = new Robot(hardwareMap, telemetry);
         robot.resetEncoders();
         robot.runUsingEncoders();
         while (!robot.isGyroCalibrated()) {

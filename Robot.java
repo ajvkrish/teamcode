@@ -325,7 +325,10 @@ public class Robot {
     //STATE MACHINE
     //Methods: pick up mineral, drop mineral, arm extension, retract arm, gold left, gold middle, gold right custom extend, state machine(boolean)
     //state: 0=default-custom extend, 1=extend, 2=collect, 3=retract, 4=dump
+
+
            public void customExtend(double power)
+
            {
                if (power>=0)
                    rake.setTargetPosition(MAX_RAKE_TICKS);
