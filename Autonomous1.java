@@ -77,7 +77,10 @@ public class Autonomous1 extends LinearOpMode {
         robot.encoderRun(distance, power);
         sleep(milli);
         idle();
-        telemetry.addData("Run has finished", "");
+        for(int i = 0; i <= 5; i++){
+            telemetry.addData("Run has finished", "");
+        }
+
         telemetry.update();
         idle();
     }

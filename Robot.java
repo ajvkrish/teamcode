@@ -591,8 +591,10 @@ public class Robot {
         }
 while(runtime.seconds()<20) {
     while (!foundSilver) {
-        if (runtime.seconds() > 20)
+        if (runtime.seconds() > 20) {
             return 0;
+            //another line
+        }
         if (tfod != null) {
             // getUpdatedRecognitions() will return null if no new information is available since
             // the last time that call was made.
